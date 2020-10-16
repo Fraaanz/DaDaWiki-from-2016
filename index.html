@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="css/main.css" media="all" type="text/css" rel="stylesheet">
+	<link href="css/jsfranz.css" media="all" type="text/css" rel="stylesheet">
+	<link href="css/grid.css" media="all" type="text/css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" media="all" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://use.typekit.net/lpy6wnj.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/processing.js"></script> 
+</head>
+<body>
+	
+<div class="writeOverlay">
+  <script type="text/processing">
+      void setup() {
+		  size(1200, 800);
+		  background(1000);
+		}
+
+		void draw() {
+		  stroke(50);
+		  stroke(0,0,255);
+		  strokeWeight(50);
+		  if (mousePressed == false) {
+		    line(mouseX, mouseY, pmouseX, pmouseY);
+		  }
+		}
+    </script>
+    <!-- <div class="canvas-border"> </div> -->
+    	<canvas></canvas>
+   
+    <!--<div class="textOverlayfield">
+    	Schreibe deinen Namen und klicke auf OK
+    </div>-->
+    <button class="ok">!</button>
+</div>
+<video src="mediastream:null/d3d28520-5bc3-8b44-bc57-509edda4ffb6" id="video" autoplay=""></video>
+<canvas id="canvas"></canvas>
+<div class="container-fluid">
+	<!--- FRANZ PART 1 - Anfang  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X -->
+
+	<div class="row header">
+		
+		<div class="col-md-10 headerBorder">
+			<div class="header-title">
+				<h1>DADA Wiki</h1>
+				<p>Jede Sache hat ihr Wort, aber das Wort ist eine Sache für sich geworden. <br>
+				Warum soll ich es nicht finden? Warum kann der Baum nicht <span>»Pluplusch«</span> heißen?</p>
+		
+			</div>
+			<!-- <div class="header-menu">
+				<ul>
+					<li><a>Jolifanto</a></li>
+					<li><a>Bambla</a></li>
+					<li><a>Oh falli</a></li>
+					<li><a>Bambla</a></li>
+					<li><a>Großiga</a></li>
+					<li><a>M'pfa Habla</a></li>
+				</ul>
+			</div> -->
+
+		</div>
+
+		<div class="col-md-2">
+			<div class="header-search">
+					<form class="search-form" action="#" role="search">
+						<!--<label>Suche</label>-->
+						<input type="text" class="search-field" placeholder="">
+						<input type="submit" class="search-submit" value="Suchen">
+					</form>
+				</div>
+			
+		</div>
+
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-10 alphabet">
+			
+			<ul>
+				<li class="alphabeta">A</li>
+				<li class="alphabetb">B</li>
+				<li class="alphabetc">C</li>
+				<li class="alphabetd">D</li>
+				<li class="alphabete">E</li>
+				<li class="alphabetf">F</li>
+				<li class="alphabetg">G</li>
+				<li class="alphabeth">H</li>
+				<li class="alphabeti">I</li>
+				<li class="alphabetj">J</li>
+				<li class="alphabetk">K</li>
+				<li class="alphabetl">L</li>
+				<li class="alphabeta">M</li>
+				<li class="alphabetb">N</li>
+				<li class="alphabetc">O</li>
+				<li class="alphabetd">P</li>
+				<li class="alphabete">Q</li>
+				<li class="alphabetf">R</li>
+				<li class="alphabetg">S</li>
+				<li class="alphabeth">T</li>
+				<li class="alphabeti">U</li>
+				<li class="alphabetj">V</li>
+				<li class="alphabetk">W</li>
+				<li class="alphabetl">X</li>
+				<li class="alphabeta">Y</li>
+				<li class="alphabetb">Z</li>
+			</ul>
+
+		</div>
+
+		<div class="col-md-2 alphabet">
+
+		</div>
+
+	</div>
+
+	<!--- FRANZ PART 1 - Ende  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X -->
+
+	<div class="row"><!-- ////////////////////////////////////////////////// Colum Liste 
+-->
+		<div class="col-md-4 list" id="cam">
+
+
+			<ul>
+				<div class="dada-addon">
+				 <canvas id="synth-pad"></canvas>
+				  <div id="info">
+				    <span id="frequency">n/a</span>
+				    <span id="volume">n/a</span>
+				  </div>
+				</div>
+				<a><li>'Gadji beri bimba' - Hugo Ball</li></a>
+				<a><li>'So, so!' - Kurt Schwitters</li></a>
+				<a><li>'A.M.' - Kurt Schwitters</li></a>
+				<a><li>'Seenot' - Kurt Schwitters</li></a>
+				<a><li>'Die Primitiven' - Richard Huelsenbeck</li></a>
+				<a><li>'Westwego' - Philipe Soupault</li></a>
+				<a><li>'Zwölf' - Kurt Schwitters</li></a>
+				<a><li>'Morfin' - Emmy Hennings</li></a>
+				<a><li>'Ätherstrophen' - Emmy Hennings</li></a>
+				<a><li>'Gesang zur Dämmerung' - Emmy Hennings</li></a>
+				<a><li>'Nach dem Cabaret' - Emmy Hennings</li></a>
+				<a><li>'Tänzerin' - Emmy Hennings</li></a>
+				<a><li>'Gesang an die Welt' - George Grosz</li></a>
+				<a><li>'An Anna Blume' - Kurt Schwitters</li></a>
+				<a><li>'Die zute Tute' - Kurt Schwitters</li></a>
+				<a><li>'Totentanz' - Hugo Ball</li></a>
+				<a><li>'Karawane' - Hugo Ball</li></a>
+				<a><li>'Seepferdchen und Flugfische' - Hugo Ball</li></a>
+				<a><li>'Die Wasserprobe' - Max Ernst</li></a>
+				<a><li>'Das Urgebet der Scholle' - Kurt Schwitters</li></a>
+				<a><li>'Tomatenblüten' - Philipe Soupault</li></a>
+				<a><li>'Perhaps Strange' - Kurt Schwitters</li></a>
+				<a><li>'Das Dadalyripipidon' - Wieland Herzfelde</li></a>
+				<a><li>'Bimmelresonnanz II' - Johannes Theodor Baargeld</li></a>
+				<a><li>'What a b what a b what a beauty' - Kurt Schwitters</li></a>
+				<a><li>'Sie puppt mit Puppen' - Kurt Schwitters</li></a>
+				<a><li>'Unsittliches i-Gedicht' - Kurt Schwitters</li></a>
+				<a><li>'Gedicht' - Kurt Schwitters</li></a>
+				<a><li>'Trauerdiriflog' - Wieland Herzfelde</li></a>
+				<a><li>'Opus Null' - Hans Arp</li></a>
+				<a><li>'Sekundenzeiger' - Hans Arp</li></a>
+				<a><li>'DaDa-Schalmei' - Richard Huelsenbeck</li></a>
+				<a><li>'Cigarren' - Kurt Schwitters</li></a>
+				<a><li>'Simultangedicht "kaa gee dee"' - Kurt Schwitters</li></a>
+				<a><li>'Gadji beri bimba' - Hugo Ball</li></a>
+				<a><li>'So, so!' - Kurt Schwitters</li></a>
+				<a><li>'A.M.' - Kurt Schwitters</li></a>
+				<a><li>'Seenot' - Kurt Schwitters</li></a>
+				<a><li>'Die Primitiven' - Richard Huelsenbeck</li></a>
+				<a><li>'Westwego' - Philipe Soupault</li></a>
+				<a><li>'Zwölf' - Kurt Schwitters</li></a>
+				<a><li>'Morfin' - Emmy Hennings</li></a>
+				<a><li>'Ätherstrophen' - Emmy Hennings</li></a>
+				<a><li>'Gesang zur Dämmerung' - Emmy Hennings</li></a>
+				<a><li>'Nach dem Cabaret' - Emmy Hennings</li></a>
+				<a><li>'Tänzerin' - Emmy Hennings</li></a>
+				<a><li>'Gesang an die Welt' - George Grosz</li></a>
+				<a><li>'An Anna Blume' - Kurt Schwitters</li></a>
+				<a><li>'Die zute Tute' - Kurt Schwitters</li></a>
+				<a><li>'Totentanz' - Hugo Ball</li></a>
+				<a><li>'Karawane' - Hugo Ball</li></a>
+				<a><li>'Seepferdchen und Flugfische' - Hugo Ball</li></a>
+				<a><li>'Die Wasserprobe' - Max Ernst</li></a>
+				<a><li>'Das Urgebet der Scholle' - Kurt Schwitters</li></a>
+				<a><li>'Tomatenblüten' - Philipe Soupault</li></a>
+				<a><li>'Perhaps Strange' - Kurt Schwitters</li></a>
+				<a><li>'Das Dadalyripipidon' - Wieland Herzfelde</li></a>
+				<a><li>'Bimmelresonnanz II' - Johannes Theodor Baargeld</li></a>
+				<a><li>'What a b what a b what a beauty' - Kurt Schwitters</li></a>
+				<a><li>'Sie puppt mit Puppen' - Kurt Schwitters</li></a>
+				<a><li>'Unsittliches i-Gedicht' - Kurt Schwitters</li></a>
+				<a><li>'Gedicht' - Kurt Schwitters</li></a>
+				<a><li>'Trauerdiriflog' - Wieland Herzfelde</li></a>
+				<a><li>'Opus Null' - Hans Arp</li></a>
+				<a><li>'Sekundenzeiger' - Hans Arp</li></a>
+				<a><li>'DaDa-Schalmei' - Richard Huelsenbeck</li></a>
+				<a><li>'Cigarren' - Kurt Schwitters</li></a>
+				<a><li>'Simultangedicht "kaa gee dee"' - Kurt Schwitters</li></a>
+				<a><li>'Gadji beri bimba' - Hugo Ball</li></a>
+				<a><li>'So, so!' - Kurt Schwitters</li></a>
+				<a><li>'A.M.' - Kurt Schwitters</li></a>
+				<a><li>'Seenot' - Kurt Schwitters</li></a>
+				<a><li>'Die Primitiven' - Richard Huelsenbeck</li></a>
+				<a><li>'Westwego' - Philipe Soupault</li></a>
+				<a><li>'Zwölf' - Kurt Schwitters</li></a>
+				<a><li>'Morfin' - Emmy Hennings</li></a>
+				<a><li>'Ätherstrophen' - Emmy Hennings</li></a>
+				<a><li>'Gesang zur Dämmerung' - Emmy Hennings</li></a>
+				<a><li>'Nach dem Cabaret' - Emmy Hennings</li></a>
+				<a><li>'Tänzerin' - Emmy Hennings</li></a>
+				<a><li>'Gesang an die Welt' - George Grosz</li></a>
+				<a><li>'An Anna Blume' - Kurt Schwitters</li></a>
+				<a><li>'Die zute Tute' - Kurt Schwitters</li></a>
+				<a><li>'Totentanz' - Hugo Ball</li></a>
+				<a><li>'Karawane' - Hugo Ball</li></a>
+				<a><li>'Seepferdchen und Flugfische' - Hugo Ball</li></a>
+				<a><li>'Die Wasserprobe' - Max Ernst</li></a>
+				<a><li>'Das Urgebet der Scholle' - Kurt Schwitters</li></a>
+				<a><li>'Tomatenblüten' - Philipe Soupault</li></a>
+				<a><li>'Perhaps Strange' - Kurt Schwitters</li></a>
+				<a><li>'Das Dadalyripipidon' - Wieland Herzfelde</li></a>
+				<a><li>'Bimmelresonnanz II' - Johannes Theodor Baargeld</li></a>
+				<a><li>'What a b what a b what a beauty' - Kurt Schwitters</li></a>
+				<a><li>'Sie puppt mit Puppen' - Kurt Schwitters</li></a>
+				<a><li>'Unsittliches i-Gedicht' - Kurt Schwitters</li></a>
+				<a><li>'Gedicht' - Kurt Schwitters</li></a>
+				<a><li>'Trauerdiriflog' - Wieland Herzfelde</li></a>
+				<a><li>'Opus Null' - Hans Arp</li></a>
+				<a><li>'Sekundenzeiger' - Hans Arp</li></a>
+				<a><li>'DaDa-Schalmei' - Richard Huelsenbeck</li></a>
+				<a><li>'Cigarren' - Kurt Schwitters</li></a>
+				<a><li>'Simultangedicht "kaa gee dee"' - Kurt Schwitters</li></a>
+				<a><li>'Gadji beri bimba' - Hugo Ball</li></a>
+				<a><li>'So, so!' - Kurt Schwitters</li></a>
+				<a><li>'A.M.' - Kurt Schwitters</li></a>
+				<a><li>'Seenot' - Kurt Schwitters</li></a>
+				<a><li>'Die Primitiven' - Richard Huelsenbeck</li></a>
+				<a><li>'Westwego' - Philipe Soupault</li></a>
+				<a><li>'Zwölf' - Kurt Schwitters</li></a>
+				<a><li>'Morfin' - Emmy Hennings</li></a>
+				<a><li>'Ätherstrophen' - Emmy Hennings</li></a>
+				<a><li>'Gesang zur Dämmerung' - Emmy Hennings</li></a>
+				<a><li>'Nach dem Cabaret' - Emmy Hennings</li></a>
+				<a><li>'Tänzerin' - Emmy Hennings</li></a>
+				<a><li>'Gesang an die Welt' - George Grosz</li></a>
+				<a><li>'An Anna Blume' - Kurt Schwitters</li></a>
+				<a><li>'Die zute Tute' - Kurt Schwitters</li></a>
+				<a><li>'Totentanz' - Hugo Ball</li></a>
+				<a><li>'Karawane' - Hugo Ball</li></a>
+				<a><li>'Seepferdchen und Flugfische' - Hugo Ball</li></a>
+				<a><li>'Die Wasserprobe' - Max Ernst</li></a>
+				<a><li>'Das Urgebet der Scholle' - Kurt Schwitters</li></a>
+				<a><li>'Tomatenblüten' - Philipe Soupault</li></a>
+				<a><li>'Perhaps Strange' - Kurt Schwitters</li></a>
+				<a><li>'Das Dadalyripipidon' - Wieland Herzfelde</li></a>
+				<a><li>'Bimmelresonnanz II' - Johannes Theodor Baargeld</li></a>
+				<a><li>'What a b what a b what a beauty' - Kurt Schwitters</li></a>
+				<a><li>'Sie puppt mit Puppen' - Kurt Schwitters</li></a>
+				<a><li>'Unsittliches i-Gedicht' - Kurt Schwitters</li></a>
+				<a><li>'Gedicht' - Kurt Schwitters</li></a>
+				<a><li>'Trauerdiriflog' - Wieland Herzfelde</li></a>
+				<a><li>'Opus Null' - Hans Arp</li></a>
+				<a><li>'Sekundenzeiger' - Hans Arp</li></a>
+				<a><li>'DaDa-Schalmei' - Richard Huelsenbeck</li></a>
+				<a><li>'Cigarren' - Kurt Schwitters</li></a>
+				<a><li>'Simultangedicht "kaa gee dee"' - Kurt Schwitters</li></a>
+				<a><li>'Gadji beri bimba' - Hugo Ball</li></a>
+				<a><li>'So, so!' - Kurt Schwitters</li></a>
+				<a><li>'A.M.' - Kurt Schwitters</li></a>
+				<a><li>'Seenot' - Kurt Schwitters</li></a>
+				<a><li>'Die Primitiven' - Richard Huelsenbeck</li></a>
+				<a><li>'Westwego' - Philipe Soupault</li></a>
+				<a><li>'Zwölf' - Kurt Schwitters</li></a>
+				<a><li>'Morfin' - Emmy Hennings</li></a>
+				<a><li>'Ätherstrophen' - Emmy Hennings</li></a>
+				<a><li>'Gesang zur Dämmerung' - Emmy Hennings</li></a>
+				<a><li>'Nach dem Cabaret' - Emmy Hennings</li></a>
+				<a><li>'Tänzerin' - Emmy Hennings</li></a>
+			</ul>
+		</div>
+		<div class="col-md-3 poemCol" id="cam"><!-- ////////////////////////////////////////////////// Colum 1 poem 
+-->
+			<div class="poem" id="cam">
+				<h1 class="jsfa" id="cam">
+				</a>Bimmelresonnanz II<span>
+				</a> <br>Johannes Theodor Baargeld</span></h1>
+				
+				<p>Bergamotten flotten im Petroleumhimmel
+				<br>Schwademasten asten Schwanenkerzen
+				<br>Teleplastisch starrt das Cherimbien Gewimmel
+				<br>In die überöffneten Portierenherzen
+				<br>Inhastiert die Himmelbimmel</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 class="jsf" id="cam">What a b what a b what a beauty<span> <br>Kurt Schwitters</span></h1>
+				
+				<p>What a be be be be be
+				<br>What a be be be be be</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>DaDa-Schalmei<span>
+				</a> <br>Richard Huelsenbeck</span></h1>
+				
+				<p>Auf der Flöte groß und bieder 
+				<br>Spielt der Dadaiste wieder, 
+				<br>da am Fluß die Grille zirpt 
+				<br>Und der Mond die Nacht umwirbt, 
+				<br>Tandaradei.
+
+				<p>Ach, die Seele ist so trocken 
+				<br>Und der Kopf ist ganz verwirrt, 
+				<br>Oben, wo die Wolken hocken, 
+				<br>Grausiges Gevögel schwirrt, 
+				<br>Tandaradei.</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Sie puppt mit Puppen<span>
+				</a> <br>Kurt Schwitters</span></h1>
+				
+				<p>Die Puppen puppen mit kleinen Puppen,
+				<br>Die kleinen Puppen puppen mit winzigen Puppen,
+				<br>Die winzigen Puppen puppen mit Püppchen,
+				<br>Die Püppchen puppen mit kleinen Püppchen,
+				<br>Die kleinen Püppchen puppen mit winzigen Püppchen,
+				<br>Die winzigen Püppchen puppen,
+				<br>Keiner puppt mit ihr.
+				<br>Ah, Du meine Puppe,
+				<br>Meine süße Puppe;</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 class="jsfa" id="cam">
+				</a>Unsittliches i-Gedicht<span>
+				</a> <br>Kurt Schwitters</span></h1>
+				
+				<p>Dames-Hemden . . . . . . . . . 
+				<br>Dames-Pantalons, fransch model 
+				<br>Dames-Pantalons . . . . . . . .
+				<br>Prima Dames Nachtponnen . . . .
+				<br>Dames-Combinations . . . . . . 
+				<br>Heeren Hemden, zwaar graslinnen</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Gedicht<span>
+				</a><br>Kurt Schwitters</span></h1>
+				
+				 <br>&nbsp;&nbsp;&nbsp;b
+				 <br>&nbsp;&nbsp;&nbsp;f
+				 <br>&nbsp;&nbsp;bw
+				 <br>&nbsp;fms
+				 <br>&nbsp;bwre
+				 <br>fmsbewe
+				 <br>beweretä
+				 <br>fmsbewetä
+				 <br>p
+				</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 class="jsf" id="cam">
+				</a>Trauerdiriflog<span>
+				</a> <br>Wieland Herzfelde</span></h1>
+				
+				<p>Wante quante wante,
+				<br>Da sitzt ja meine Tante,</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Opus Null<span>
+				</a> <br>Hans Arp</span></h1>
+				
+				<p>1
+
+				<p>Ich bin der große Derdiedas 
+				<br>das rigorose Regiment 
+				<br>der Ozonstengel prima Qua 
+				<br>der anonyme Einprozent.
+				<br>Das P. P. Tit und auch die Po 
+				<br>Posaune ohne Mund und Loch 
+				<br>das große Herkulesgeschirr 
+				<br>der linke Fuß vom rechten Koch.
+
+				<p>Ich bin der lange Lebenslang 
+				<br>der zwölfte Sinn im Eierstock 
+				<br>der insgesamte Augustin 
+				<br>im lichten Zelluloserock.
+
+				<p>2
+
+				<p>Er zieht aus seinem schwarzen Sarg 
+				<br>um Sarg um Sarg um Sarg hervor. 
+				<br>Er weint mit seinem Vorderteil 
+				<br>und wickelt sich in Trauerflor.
+				<br>Halb Zauberer halb Dirigent 
+				<br>taktiert er ohne Alpenstock 
+				<br>sein grünes Ziffernblatt am Hut 
+				<br>und fällt von seinem Kutscherbock.
+
+				<p>Dabei stößt er den Ghettofisch 
+				<br>von der möblierten Staffelei. 
+				<br>Sein langer Würfelstrumpf zerreißt 
+				<br>zweimal entzwei dreimal entdrei.
+
+				<p>3
+
+				<p>Er sitzt mit sich in einem Kreis. 
+				<br>Der Kreis sitzt mit dem eignen Leib. 
+				<br>Ein Sack mit einem Kamm der steht 
+				<br>dient ihm als Sofa und als Weib.
+				<br>Der eigne Leib der eigne Sack. 
+				<br>Der Vonvon und die linke Haut. 
+				<br>Und tick und tack und tipp und topp 
+				<br>der eigne Leib fällt aus der Braut.
+
+				<p>Er schwingt als Pfund aus seinem Stein 
+				<br>die eigne Braut im eignen Sack. 
+				<br>Der eigne Leib im eignen Kreis 
+				<br>fällt nackt als Sofa aus dem Frack.
+
+				<p>4
+
+				<p>Mit seiner Dampfmaschine treibt 
+				<br>er Hut um Hut aus seinem Hut 
+				<br>und stellt sie auf in Ringelreihn 
+				<br>wie man es mit Soldaten tut.
+				<br>Dann grüßt er sie mit seinem Hut 
+				<br>der dreimal grüßt mit einem du. 
+				<br>Das traute sie vom Kakasie 
+				<br>ersetzt er durch das Kakadu.
+
+				<p>Er sieht sie nicht und grüßt sie doch 
+				<br>er sie mit sich und läuft um sich. 
+				<br>Der Hüte inbegriffen sind 
+				<br>und deckt den Deckel ab vom Ich.</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Gadji beri bimba<span>
+				</a> <br>Hugo Ball</span></h1>
+
+				<p>gadji beri bimba glandridi laula lonni cadori
+				<br>gadjama gramma berida bimbala glandri galassassa laulitalomini
+				<br>gadji beri bin blassa glassala laula lonni cadorsu sassala bim
+				<br>gadjama tuffm i zimzalla binban gligla wowolimai bin beri ban
+				<br>o katalominai rhinozerossola hopsamen laulitalomini hoooo
+				<br>gadjama rhinozerossola hopsamen
+				<br>bluku terullala blaulala loooo</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>So, so!<span>
+				</a> <br>Kurt Schwitters</span></h1>
+
+				<p>Vier Maurer saßen einst auf einem Dach.
+				<br>Da sprach der erste: "Ach!"
+				<br>Der zweite: "Wie ists möglich dann?"
+				<br>Der dritte: "Daß das Dach halten kann!!!"
+				<br>Der vierte: "Ist doch kein Träg</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>A.M.<span>
+				</a> <br>Kurt Schwitters</span></h1>
+
+				<p>Da rauscht ein zäher Wasserfall.
+				<br>Da sank ein zäher Gummiball.</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 class="jsfa" id="cam">
+				</a>Seenot<span>
+				</a> <br>Kurt Schwitters</span></h1>
+
+				<p>Wenn die Kraniche bellen
+				<br>Auf den tanzenden Wellen,
+				<br>Muß das Schifflein zerschellen.
+
+				<p>Und die tausende Raketen,
+				<br>Die beleuchten das täten,</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Die Primitiven<span>
+				</a> <br>Richard Huelsenbeck</span></h1>
+
+				<p>"bumm DADAI</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>  
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Westwego<span>
+				</a> <br>Philipe Soupault</span></h1>
+
+
+				<p>Eines sommers ging ich in London umher
+				<br>die füße brennebd und das herz in den augen
+				<br>vor schwarzen mauern vor roten mauern
+				<br>an den großen docks
+				<br>wo riesige policemen wie gereizte
+				<br>fragezeichen stehn
+				<br>Man konnte mit der sonne spielen
+				<br>die sich wie ein vogel auf alle
+				<br>monumente setzte
+				<br>zugtaube
+				<br>alltagstaube
+				<br>Ich ging durch dieses viertel das Whitechapel heißt
+				<br>pilgerfahrt meiner jugend
+				<br>wo ich nichts antraf
+				<br>als sehr gut gekleidete leute
+				<br>die zylinderhüte trugen
+				<br>und streichholzverkäuferinnen
+				<br>mit strohhüten auf
+				<br>die gleich den bäuerinnen Frankreichs riefen
+				<br>um die kunden anzulocken
+				<br>penny penny penny
+				<br>Ich betrat eine kneipe
+				<br>wagon dritter klasse
+				<br>Daisy Mary Poppy</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Zwölf<span>
+				</a> <br>Kurt Schwitters</span></h1>
+
+				<p>Eins Zwei Drei Vier Fünf
+				<br>Fünf Vier Drei Zwei Eins
+				<br>Zwei Drei Vier Fünf Sechs
+				<br>Sechs Fünf Vier Drei Zwei
+				<br>Sieben Sieben Sieben Sieben Sieben</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Morfin' <span> <br>Emmy Hennings</span></h1>
+				
+				<p>Wir warten auf ein letztes Abenteuer
+				<br>Was kümmert uns der Sonnenschein?
+				<br>Hochaufgetürmte Tage stürzen ein
+				<br>Unruhige Nächte - Gebet im Fegefeuer.</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Nach dem Cabaret<span>
+				</a> <br>Emmy Hennings</span></h1>
+				
+				<p>Ich gehe morgens früh nach Haus.
+				<br>Die Uhr schlägt fünf, es wird schon hell,
+				<br>Doch brennt das Licht noch im Hotel.
+				<br>Das Cabaret ist endlich aus.
+				<br>In einer Ecke Kinder kauern,</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Tänzerin<span>
+				</a> <br>Emmy Hennings</span></h1>
+				
+				<p>Dir ist als ob ich schon gezeichnet wäre
+				<br>Und auf der Totenliste stünde.</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+		</div>
+		<div class="col-md-3"><!-- ////////////////////////////////////////////////// Colum 2 Poem 
+-->
+			<div class="poem" id="cam">
+				<h1 class="jsf" id="cam">
+				</a>Ätherstrophen<span>
+				</a> <br>Emmy Hennings</span></h1>
+				
+				<p>Jetzt muß ich aus der großen Kugel fallen.
+				<br>Dabei ist in Paris ein schönes Fest.
+				<br>Die Menschen sammeln sich am Gare de l'Est
+				<br>Und bunte Seidenfahnen wallen.
+				<br>Ich aber bin nicht unter ihnen.
+				<br>Ich fliege in dem großen Raum.
+				<br>Ich mische mich in jeden Traum
+				<br>Und lese in den tausend Mienen.
+				<br>Es liegt ein kranker Mann in seinem Jammer.
+				<br>Mich hypnotisiert sein letzter Blick.
+				<br>Wir sehnen einen Sommertag zurück...
+				<br>Ein schwarzes Kreuz erfüllt die Kammer...</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 class="jsfa" id="cam">
+				</a>Gesang zur Dämmerung<span>
+				</a> <br>Emmy Hennings</span></h1>
+				
+				<p>für Hugo Ball
+
+
+				<p><p>Oktaven taumeln Echo nach durch graue Jahre.
+				<br>Hochaufgetürmte Tage stürzen ein.
+				<br>Dein will ich sein -
+				<br>Im Grabe wachsen meine gelben Haare
+				<br>Und in Holunderbäumen leben fremde Völker
+				<br>Ein blasser Vorhang raunt von einem Mord
+				<br>Zwei Augen irren ruhelos durchs Zimmer
+				<br>Gepenster gehen um beim Küchenbord.</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 class="jsf" id="cam">
+				</a>Gesang an die Welt<span> <br>George Grosz</span></h1>
+				
+				<p>Ach knallige Welt, du Lunapark,
+				<br>Du seliges Abnormitätenkabinett,
+				<br>Paß auf! Hier kommt Grosz,
+				<br>Der traurigste Mensch in Europa,
+				<br>"Ein Phänomen an Trauer".
+				<br>Steifen Hut im Genick,
+				<br>Kein schlapper Hund!!!!
+				<br>Niggersongs im Schädel,
+				<br>Bunt wie Hyazinthenfelder,
+				<br>Oder turbulente D-Züge,
+				<br>Über rasselnde Brücken knatternd -
+				<br>Ragtimetänzer,
+				<br>Am staketenzaun wartend mit der Menge
+				<br>Auf Rob. E. Lee.</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>An Anna Blume<span>
+				</a> <br>Kurt Schwitters</span></h1>
+				
+				<p>Preisfrage:
+				<br>1. Anna Blume hat ein Vogel,
+				<br>2. Anna Blume ist rot.
+				<br>3. Welche Farbe hat der Vogel?
+				<br>Blau ist die Farbe Deines gelben Haares,
+				<br>Rot ist die Farbe Deines grünen Vogels.
+				<br>Du schlichtes Mädchen im Alltagskleid,
+				<br>Du liebes grünes Tier, ich liebe Dir!
+				<br>Du Deiner Dich Dir, ich Dir, Du mir, ---- wir!
+				<br>Das gehört beiläufig in die ---- Glutenkiste.
+				<br>Anna Blume, Anna, A----N----N----A!</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Die zute Tute<span>
+				</a> <br>Kurt Schwitters</span></h1>
+				
+				<p>En as hja in de poede seach, 
+				<br>Dan wieren d'r reade kjessen yn. 
+				<br>Und als sie in die Tüte sah, 
+				<br>Da waren rote Kirschen drin.</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 class="jsf" id="cam">
+				</a>Totentanz<span>
+				</a> <br>Hugo Ball</span></h1>
+				
+				<p>So sterben wir, so sterben wir.
+				<br>Wir sterben alle Tage,
+				<br>Weil es so gemütlich sich sterben läßt.
+				<br>Morgens noch in Schlaf und Traum
+				<br>Mittags schon dahin.
+				<br>Abends scho zuunterst im Grabe drin.
+
+				<p>Die Schlacht ist unser Freudenhaus.
+				<br>Von Blut ist unsere Sonne.
+				<br>Tod ist unser Zeichen und Losungswort.
+				<br>Weib und Kind verlassen wir -
+				<br>Was gehen sie uns an?
+				<br>Wenn man sich auf uns nur
+				<br>Verlassen kann.
+
+				<p>So morden wir, so morden wir.
+				<br>Wir morden alle Tage
+				<br>Unsre Kameraden im Totentanz.
+				<br>Bruder, reck dich auf vor mir,
+				<br>Bruder, deine Brust
+				<br>Bruder, der du fallen und sterben mußt.</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Karawane<span>
+				</a> <br>Hugo Ball</span></h1>
+				
+				<p>jolifanto bambla o falli bambla
+				<br>großiga m'pfa habla horem
+				<br>egiga goramen
+				<br>higo bloiko russula huju
+				<br>hollaka hollala
+				<br>anlogo bung
+				<br>blago bung blago bung
+				<br>bosso fataka
+				<br>ü üü ü</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Seepferdchen und Flugfische<span>
+				</a> <br>Hugo Ball</span></h1>
+				
+				<p>tressli bessli nebogen leila
+				<br>flusch kata
+				<br>ballubasch
+				<br>zack hitti zopp</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Die Wasserprobe<span>
+				</a> <br>Max Ernst</span></h1>
+				
+				<p>Hierbei wird die Faust geballt
+				<br>Daß der frosch zu boden knallt
+				<br>Hier die magd die motten putzt
+				<br>Daß der wind die dämpfe stutzt
+
+				<p>Hierbei wird ein dampf verschluckt
+				<br>Daß der greise bammel zuckt</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 class="jsf" id="cam">
+				</a>Das Urgebet der Scholle<span>
+				</a> <br>Kurt Schwitters</span></h1>
+				
+				<p>Schale
+				<br>Schiller
+				<br>Schale</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Tomatenblüten<span>
+				</a> <br>Philipe Soupault</span></h1>
+				
+				<p>Weiß nit wohin ich gehen soll
+				<br>Gesetzt
+				<br>Lotrecht
+				<br>Gebettet
+				<br>En avant
+				<br>Entert die Wagen
+				<br>Her mit den Besen</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 class="jsfa" id="cam">
+				</a>Perhaps Strange<span>
+				</a> <br>Kurt Schwitters</span></h1>
+				
+				<p>The world is full of goods trains
+				<br>The passengers are cows
+				<br>And milk and butter.
+				<br>And cheese and lovely marmelade
+				<br>And bulls and horses,
+				<br>And cocks and hens.</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Das Dadalyripipidon<span>
+				</a> <br>Wieland Herzfelde</span></h1>
+				
+				<p>Den Dadalyden lotselt Pipikotzmos,
+				<br>Die Pipiratten späheln nach dem Dadalon.
+				<br>Sieh! Da & Pi, Dapi, Pida, Pidadapi.
+				<br>Auch der Mestrieze Dapidapi frosig bahreln.
+				<br>Zuvörderst darfst dem Daad du fröhnen,
+				<br>Junger Pipi (so pipida und dapipi dada).
+				<br>Dem Dadaphon entströmeln sanfte Jamben.
+				<br>Wer könnte - ohne Dadanent des Pipidroms zu sein.
+				<br>Darob: Das Ganze stillgestanden (Mittelding),
+				<br>Datater: dat!
+				<br>Sprecht Dadamuden.
+				<br>Der Laubfrosch säugelt euch mit Pipxin?
+				<br>Der du die Dha von Daad stets peinlich weißt zu scheiteln,
+				<br>Auf, Auf, an's Dadapult, sag's nicht dem Gnömmel-Bömmel.
+				<br>Gewissenlose Pipidranten flöteln,</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Sekundenzeiger<span>
+				</a> <br>Hans Arp</span></h1>
+				
+				<p>daß ich als ich 
+				<br>ein und zwei ist 
+				<br>daß ich als ich 
+				<br>drei und vier ist 
+				<br>daß ich als ich 
+				<br>wieviel zeigt sie 
+				<br>daß ich als ich 
+				<br>tickt und tackt sie </p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 class="jsfa" id="cam">
+				</a>Cigarren<span>
+				</a> <br>Kurt Schwitters</span></h1>
+				
+				<p>Cigarren 
+				<br>Ci 
+				<br>garr 
+				<br>ren 
+				<br>Ce 
+				<br>i 
+				<br>ge 
+				<br>err 
+				<br>err 
+				<br>e 
+				<br>en 
+				<br>Ce 
+				<br>CeI 
+				<br>CeIGe 
+				<br>CeIGeA 
+				<br>CeIGeAErr 
+				<br>CeIGeAErrEr 
+				<br>CeIGeAErrErr 
+				<br>CeIGeAErrErr</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+			<div class="poem" id="cam">
+				<h1 id="cam">
+				</a>Simultangedicht "kaa gee dee"<span>
+				</a> <br>Kurt Schwitters</span></h1>
+				
+				kaa gee dee  takepak       tapekek       
+
+				katedraale   take          tape          
+
+				draale       takepak       kek kek       
+
+				kaa tee dee  takepak       tapekek       
+
+				kateedraale  take          tape          
+
+				draale       takepak       kek kek       
+
+				(alle: )     oowenduumir                 
+
+				kaa tee dee  diimaan       tapekek       
+
+				kateedraale  diimaan       tape          
+
+				draale       diimaan       kek kek       
+
+				diimaan      - - - - - -   diimaan       
+
+				             diimaan                     
+
+				(alle: )     aawanduumir</p>
+ 				<a>
+					[mehr..]
+				</a>
+			</div>
+		</div>
+
+
+
+		<div class="col-md-2">
+			<div class="settings">
+				<div>
+					<div class="header-topmenu">
+						<p><span class="neuertextNewsletter">Newsletter Abonnieren</span></p>
+					</div>
+					<div class="settings-lang">
+						<h2>Sprache:</h2>
+						<p>
+							<span class="neuertextDE">de</span> | <span class="neuertextEN">en</span>
+						</p>
+					</div>
+
+					<div class="settings-order">
+						<h2>Sortieren:</h2>
+						<p>
+							<a href="#"><span class="settingorderoptions">Autor</span></a>
+						</p>
+						<p>
+							<a href="#">Titel</a>
+						</p>
+						<p>
+							<a href="#"><span class="settingorderoptions">Datum</span></a>
+						</p>
+						<p>
+							<a href="#">Zufall</a>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<div class="row footer">
+		<!--- FRANZ PART 2 - Anfang  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X -->
+
+
+	<div class="footer">
+
+		<div class="row">
+
+			<div class="col-md-10">
+				
+				<div class="footer-newsletter">
+					<div id="footernewsletter" class="footer-newsletter-form">
+						<h1>DaDa im Postfach? Melde dich an!</h1>
+						<form class="newsletter-form" action="#" role="subscribe">
+							<!--<label>Suche</label>-->
+							<input type="text" class="email-field" placeholder="deine@emailadresse.de">
+							<input type="submit" class="newsletter-subscribe" value="Newsletter abonnieren">
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-md-2">
+			</div>
+
+		</div>
+
+
+		<div id="down" class="row footer-content">
+			<div class="col-md-3 col1">
+
+			</div>
+			
+			<div class="col-md-2 col2">
+				
+				<div class="footer-contact">
+					<h2>Dadadi Kontakt</h2>
+					<p>
+						Ottos Mops Kotzt<br>
+						<a href="mailto:otto.mops@kotzt.de">otto-1887@kotzt.de</a>
+					</p>
+				</div>
+
+			</div>
+
+			<div class="col-md-2 col2">
+
+				<div class="footer-social">
+
+					<h2>Social Dadadi</h2>
+					<ul>
+						<li>
+							<a><img src="img/facebook.png"></a>
+						</li>
+						<li>
+							<a><img src="img/googleplus.png"></a>
+						</li>
+						<li>
+							<a><img src="img/twitter.png"></a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="col-md-3 col1">
+
+			</div>
+
+			<div class="col-md-2">
+			</div>
+			
+		</div>
+
+		<!--
+		<div class="row footer-menu">
+
+			<div class="col-md-10">
+
+				<div class="header-menu">
+					<ul>
+						<li><a>Jolifanto</a></li>
+						<li><a>Bambla</a></li>
+						<li><a>Oh falli</a></li>
+						<li><a>Bambla</a></li>
+						<li><a>Großiga</a></li>
+						<li><a>M'pfa Habla</a></li>
+					</ul>
+					<div class="header-search">
+						<form class="search-form" action="http://www.google.de" role="search">
+							<input type="text" class="search-field" placeholder="none">
+							<input type="submit" class="search-submit" value="Suchen">
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-md-2">
+			</div>
+
+		</div>
+		-->
+
+	</div>
+
+	<!--- FRANZ PART 2 - Ende  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X -->
+	</div>
+</div>   
+
+<div class="dadatext-overlay"><h1>
+Dada ist eine neue Kunstrichtung. Das kann man daran erkennen, dass bisher niemand etwas davon wusste und morgen ganz Zuerich davon reden wird. Dada stammt aus dem Lexikon. Es ist furchtbar einfach. Im Franzoesischen bedeutets Steckenpferd. Im Deutschen: Addio, steigt mir bitte den Ruecken runter, auf Wiedersehen ein ander Mal! Im Rumaenischen: 'Ja wahrhaftig, Sie haben Recht, so ist es. Jawohl, wirklich. Machen wir'. Und so weiter.<br>
+Ein internationales Wort. Nur ein Wort und das Wort als Bewegung. Es ist einfach furchtbar. Wenn man eine Kunstrichtung daraus macht, muss das bedeuten, man will Komplikationen wegnehmen. Dada Psychologie, Dada Literatur, Dada Bourgeoisie und ihr, verehrteste Dichter, die ihr immer mit Worten, nie aber das Wort selber gedichtet habt. Dada Weltkrieg und kein Ende, Dada Revolution und kein Anfang. Dada ihr Freunde und Auchdichter, allerwerteste Evangelisten. Dada Tzara, Dada Huelsenbeck, Dada m'dada, Dada mhm' dada, Dada Hue, Dada Tza.<br>
+Wie erlangt man die ewige Seligkeit? Indem man Dada sagt. Wie wird man beruehmt? Indem man Dada sagt. Mit edlem Gestus und mit feinem Anstand. Bis zum Irrsinn, bis zur Bewusstlosigkeit. Wie kann man alles Aalige und Journalige, alles Nette und Adrette, alles Vermoralisierte, Vertierte, Gezierte abtun? Indem man Dada sagt. Dada ist die Weltseele, Dada ist der Clou, Dada ist die beste Lilienmilchseife der Welt. Dada Herr Rubiner, Dada Herr Korrodi, Dada Herr Anastasius Lilienstein.
+Das heisst auf Deutsch: die Gastfreundschaft der Schweiz ist ueber alles zu schaetzen, und im Aesthetischen kommt's auf die Norm an.
+Ich lese Verse, die nichts weniger vorhaben als: auf die Sprache zu verzichten. Dada Johann Fuchsgang Goethe. Dada Stendhal. Dada Buddha, Dalai Lama, Dada m'dada, Dada m'dada, Dada mhm' dada. Auf die Verbindung kommt es an, und dass sie vorher ein bisschen unterbrochen wird. Ich will keine Worte, die andere erfunden haben. Alle Worte haben andere erfunden. Ich will meinen eigenen Unfug, und Vokale und Konsonanten dazu, die ihm entsprechen. Wenn eine Schwingung sieben Ellen lang ist, will ich fueglich Worte dazu, die sieben Ellen lang sind. Die Worte des Herrn Schulze haben nur zwei ein halb Zentimeter.
+Da kann man nun so recht sehen, wie die artikulierte Sprache entsteht. Ich lasse die Laute ganz einfach fallen. Worte tauchen auf, Schultern von Worten; Beine, Arme, Haende von Worten. Ay, oi, u. Man soll nicht zuviel Worte aufkommen lasen. Ein Vers ist die Gelegenheit, moeglichst ohne Worte und ohne die Sprache auszukommen. Diese vermaledeite Sprache, an der Schmutz klebt wie von Maklerhaenden, die die Muenzen abgegriffen haben. Das Wort will ich haben, wo es aufhoert und wo es anfaengt.
+Jede Sache hat ihr Wort; da ist das Wort selber zur Sache geworden. Warum kann der Baum nicht Pluplusch heissen, und Pluplubasch, wenn es geregnet hat? Und warum muss er ueberhaupt etwas heissen? Muessen wir denn ueberall unseren Mund dran haengen? Das Wort, das Wort, das Weh gerade an diesem Ort, das Wort, meine Herren, ist eine oeffentliche Angelegenheit ersten Ranges.<br></h1>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/dadasynth.js"></script>
+<script type="text/javascript" src="http://css-tricks.com/examples/BlurredText/js/color.js"></script>
+<script type="text/javascript" src="http://css-tricks.com/examples/BlurredText/js/jquery.lettering.js"></script>
+<script type="text/javascript" src="http://css-tricks.com/examples/BlurredText/js/textshadow.js"></script>
+<script type="text/javascript" src="js/main-franz.js"></script>
+</body>
+</html>
